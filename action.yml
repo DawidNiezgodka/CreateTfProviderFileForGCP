@@ -1,18 +1,12 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-
-# Define your inputs here.
+name: 'Create Terraform provider file for GCP'
+description: 'Creates a .tf file for Terraform provider configuration for GCP'
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  region:
+    description: 'GCP region'
     required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+  project:
+    description: 'GCP project'
+    required: true
 
 runs:
   using: node20
